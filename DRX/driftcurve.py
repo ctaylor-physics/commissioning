@@ -43,6 +43,8 @@ def main(args):
         sta = stations.lwa1
     elif name == 'lwasv':
         sta = stations.lwasv
+    elif name == 'lwana':
+        sta = stations.lwana
     else:
         raise RuntimeError("Unknown site: %s" % name)
         
