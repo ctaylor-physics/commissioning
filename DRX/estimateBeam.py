@@ -105,7 +105,7 @@ def main(args):
             
     # Calculate the dipole gain pattern to apply as a correction to the beam pattern
     ## Load in the data
-    dd = numpy.load(os.path.join(dataPath, 'beam-shape.npz'))
+    dd = numpy.load(os.path.join(dataPath+'/antenna/', 'beam-shape.npz'))
     coeffs = dd['coeffs']
     try:
         dd.close()
